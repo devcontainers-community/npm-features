@@ -9,6 +9,9 @@
 <!-- prettier-ignore-start -->
 <!-- START_FEATURE_LIST -->
 
+- **[Prettier](http://github.com/devcontainers-community/npm-features/tree/main/src/prettier)** - Installs prettier and plugins globally
+- **[TypeScript](http://github.com/devcontainers-community/npm-features/tree/main/src/typescript)** - Installs TypeScript globally
+
 <!-- END_FEATURE_LIST -->
 <!-- prettier-ignore-end -->
 
