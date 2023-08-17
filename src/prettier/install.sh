@@ -1,6 +1,5 @@
 #!/bin/bash
 set -ex
-
 npm install -g prettier@$VERSION
 
 # Prettier plugins are expected to be installed locally, not globally
