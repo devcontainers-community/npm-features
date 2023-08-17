@@ -24,3 +24,6 @@ jobs:
       - run: devcontainer features publish -r ghcr.io -n ${{ github.repository }} src
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  update-readme:
+    uses: ./.github/workflows/update-readme.yml
+    secrets: inherit
