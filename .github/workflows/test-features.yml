@@ -1,0 +1,39 @@
+name: Test features
+on:
+  push:
+    branches: "main"
+    paths:
+      - src/*/**
+      - test/*/**
+      - .github/workflows/test-features.yml
+  pull_request:
+    paths:
+      - src/*/**
+      - test/*/**
+      - .github/workflows/test-features.yml
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  list-features:
+    outputs:
+      relevant-features: ${{ steps.list-features.outputs.relevant-features }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - id: list-features
+        uses: devcontainers-community/list-features@v1
+  test-feature:
+    needs: list-features
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.list-features.outputs.relevant-features) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install -g @devcontainers/cli
+      - run: devcontainer features test -f ${{ matrix.id }}
