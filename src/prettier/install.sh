@@ -1,8 +1,6 @@
 #!/bin/bash
 set -ex
-source lib.sh
-
-ensure_npm
+command -v npm || bash install-node.sh
 
 npm install -g prettier@$VERSION
 
