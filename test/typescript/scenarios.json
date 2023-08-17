@@ -2,14 +2,12 @@
   "base_ubuntu": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-      "ghcr.io/devcontainers/features/node": {},
       "typescript": {}
     }
   },
   "debian_slim": {
     "image": "debian:bookworm-slim",
     "features": {
-      "ghcr.io/devcontainers/features/node": {},
       "typescript": {}
     }
   }
