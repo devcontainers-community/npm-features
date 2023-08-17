@@ -6,6 +6,12 @@
   <img width=100 src="https://github.com/devcontainers-community/npm-features/assets/61068799/31da965d-d958-4d7b-bde5-85e7bbbc4f94">
 </p>-->
 
+🥇 Focuses on popular npm CLI tools \
+👨‍👩‍👧‍👦 Community-driven maintainership
+
+[![](https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A7%B0+Add+a+feature&color=CB3837&label=)](https://github.com/devcontainers-community/features/discussions/new?category=ideas) &nbsp;
+[![](https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A4%9D+Join+the+org&color=222222&label=)](https://github.com/orgs/devcontainers-community/discussions/new?category=general)
+
 <!-- prettier-ignore-start -->
 <!-- START_FEATURE_LIST -->
 
@@ -23,6 +29,13 @@
 "features": {
   "ghcr.io/devcontainers-community/npm-features/<feature-id>": {}
 }
+```
+
+💡 Don't worry! You can also do this:
+
+```jsonc
+"updateContentCommand": "npm install -g @octocat/my-tiny-cli"
+// ☝ You can postCreateComand instead if you like.
 ```
 
 ## Development
