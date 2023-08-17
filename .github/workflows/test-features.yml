@@ -25,7 +25,7 @@ jobs:
         with:
           fetch-depth: 0
       - id: list-features
-        uses: devcontainers-community/list-features@v1
+        uses: devcontainers-community/list-features@v2
   test-feature:
     needs: list-features
     strategy:

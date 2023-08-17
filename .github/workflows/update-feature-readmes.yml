@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
       - id: list-features
-        uses: devcontainers-community/list-features@v1
+        uses: devcontainers-community/list-features@v2
   update-feature-readme:
     needs: list-features
     concurrency: ${{ github.ref }}-write
