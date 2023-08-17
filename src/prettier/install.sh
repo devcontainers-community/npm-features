@@ -1,7 +1,6 @@
 #!/bin/bash
 set -ex
-tree -a
-command -v npm || bash install-node.sh
+command -v npm || echo "Needs ghcr.io/devcontainers/features/node or similar"
 
 npm install -g prettier@$VERSION
 
