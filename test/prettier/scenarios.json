@@ -5,5 +5,12 @@
       "ghcr.io/devcontainers/features/node": {},
       "prettier": {}
     }
+  },
+  "debian_slim": {
+    "image": "debian:bookwork-slim",
+    "features": {
+      "ghcr.io/devcontainers/features/node": {},
+      "prettier": {}
+    }
   }
 }
