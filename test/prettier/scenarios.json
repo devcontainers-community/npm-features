@@ -7,7 +7,7 @@
     }
   },
   "debian_slim": {
-    "image": "debian:bookwork-slim",
+    "image": "debian:bookworm-slim",
     "features": {
       "ghcr.io/devcontainers/features/node": {},
       "prettier": {}
