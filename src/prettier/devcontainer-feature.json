@@ -21,5 +21,8 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/node"
+    ],
+    "dependsOn": [
+        "ghcr.io/devcontainers/features/node"
     ]
 }
