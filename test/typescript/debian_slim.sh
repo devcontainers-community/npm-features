@@ -1,3 +1,3 @@
 #!/bin/bash
 set -ex
-typescript --version
+tsc --version
