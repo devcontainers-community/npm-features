@@ -1,0 +1,18 @@
+{
+  "id": "eslint",
+  "version": "1.0.0",
+  "name": "ESLint",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/eslint",
+  "description": "Installs ESLint globally",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}
