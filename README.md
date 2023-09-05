@@ -50,4 +50,9 @@ To test a specific feature, you can use the [devcontainer CLI]:
 devcontainer features test -f <feature-id>
 ```
 
-Someone with appropriate access must manually trigger the <kbd>Publish features</kbd> workflow to create a new release.
+Someone with appropriate access must manually trigger the <kbd>Publish
+features</kbd> workflow to create a new release.
+
+In the future, the `ghcr.io/devcontainers-community/npm-features` collection
+index may be integrated into the main `ghcr.io/devcontainers-community/features`
+collection. At present, there is insufficient tooling to support this.
