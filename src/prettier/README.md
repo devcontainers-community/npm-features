@@ -22,8 +22,10 @@
 
 This Dev Container Feature installs Prettier and plugins globally using Node.js
 and npm to run `npm install -g prettier`. You can also add plugins by specifying
-a `plugins` option. This will install each plugin using
-`npm install -D $plugin`.
+a `plugins` option. This will install all the plugins at once using
+`npm install -g $PLUGINS`. You can use `prettier-plugin-octocat@1.2.3` full npm
+specifiers! Just make sure each plugin is separated by a space character, **not
+a comma**.
 
 ## Usage
 
@@ -56,7 +58,7 @@ You can specify plugins like this:
 // devcontainer.json
 "features": {
   "ghcr.io/devcontainers-community/features/prettier": {
-    "plugins": "prettier-plugin-jsdoc @prettier/plugin-php"
+    "plugins": "prettier-plugin-jsdoc @prettier/plugin-php@0.20.1"
   }
 }
 ```
