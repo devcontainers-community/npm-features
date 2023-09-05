@@ -1,4 +1,4 @@
-# Community <img valign=middle height=30 src="https://favicone.com/npmjs.com?s=64">npm Dev Container Features
+# <img valign=middle height=30 src="https://favicone.com/npmjs.com?s=64"> npm Dev Container Features
 
 📦 Top-rated globally installed npm packages for Dev Container Features
 
@@ -15,6 +15,7 @@
   </a>
 </p>
 
+<!-- TODO: Auto-generate this list -->
 <!-- prettier-ignore -->
 - **[Babel CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/babel-cli)**
 - **[Dev Containers CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/devcontainers-cli)** - 🐳 Installs the devcontainer CLI globally
@@ -60,4 +61,5 @@ main feature collection index at [devcontainers-community/features].
 
 <!-- prettier-ignore-start -->
 [devcontainers-community/features]: https://github.com/devcontainers-community/features
+[devcontainer cli]: https://github.com/devcontainers/cli
 <!-- prettier-ignore-end -->
