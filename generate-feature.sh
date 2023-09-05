@@ -33,5 +33,5 @@ EOF
 cat <<EOF | tee install.sh
 #!/bin/bash
 set -ex
-npm install -g $id@\$VERSION
+npm install -g $1@\$VERSION
 EOF
