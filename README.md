@@ -1,5 +1,3 @@
-[⬅️ Back to feature collection](https://github.com/devcontainers-community/features)
-
 # Community <img valign=middle height=30 src="https://favicone.com/npmjs.com?s=64">npm Dev Container Features
 
 📦 Top-rated globally installed npm packages for Dev Container Features
