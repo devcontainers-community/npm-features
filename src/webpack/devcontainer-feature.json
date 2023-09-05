@@ -1,0 +1,24 @@
+{
+  "id": "webpack",
+  "version": "1.0.0",
+  "name": "webpack",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/webpack",
+  "description": "Installs webpack and webpack-cli globally",
+  "options": {
+    "webpackVersion": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    },
+    "webpackCliVersion": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}
