@@ -18,14 +18,16 @@
 </p>
 
 <!-- prettier-ignore -->
+- **[Babel CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/babel-cli)**
 - **[Dev Containers CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/devcontainers-cli)** - 🐳 Installs the devcontainer CLI globally
 - **[ESLint](https://github.com/devcontainers-community/npm-features/tree/main/src/eslint)**
-- **[webpack CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/webpack-cli)**
-- **[PostCSS CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/postcss-cli)**
 - **[Jest](https://github.com/devcontainers-community/npm-features/tree/main/src/jest)**
+- **[PostCSS CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/postcss-cli)**
+- **[Prettier](https://github.com/devcontainers-community/npm-features/tree/main/src/prettier)**
 - **[Rollup](https://github.com/devcontainers-community/npm-features/tree/main/src/rollup)**
+- **[TypeScript](https://github.com/devcontainers-community/npm-features/tree/main/src/typescript)**
 - **[Vite](https://github.com/devcontainers-community/npm-features/tree/main/src/vite)**
-- **[Babel CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/babel-cli)**
+- **[webpack CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/webpack-cli)**
 
 ## Usage
 
