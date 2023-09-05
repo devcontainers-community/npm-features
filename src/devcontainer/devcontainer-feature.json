@@ -1,0 +1,18 @@
+{
+  "id": "devcontainer",
+  "version": "1.0.0",
+  "name": "Dev Containers CLI",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/devcontainer",
+  "description": "Installs the Dev Container CLI from @devcontainers/cli globally",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}
