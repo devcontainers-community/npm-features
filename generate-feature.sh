@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-if [[ -e src/$1 ]]; then
-  echo "Already exists $1"
+if [[ -e src/$1 || -e test/$1 ]]; then
+  echo "'$1' already exists"
   exit 1
 fi
 
