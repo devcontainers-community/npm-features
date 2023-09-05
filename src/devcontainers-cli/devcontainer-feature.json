@@ -1,5 +1,5 @@
 {
-  "id": "devcontainer",
+  "id": "devcontainers-cli",
   "version": "1.0.0",
   "name": "Dev Containers CLI",
   "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/devcontainer",
