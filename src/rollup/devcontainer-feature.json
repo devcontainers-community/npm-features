@@ -1,0 +1,18 @@
+{
+  "id": "rollup",
+  "version": "1.0.0",
+  "name": "Rollup",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/rollup",
+  "description": "Installs Rollup globally",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}

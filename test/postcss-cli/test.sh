@@ -1,3 +1,3 @@
 #!/bin/bash
 set -ex
-tsc --version
+postcss --version

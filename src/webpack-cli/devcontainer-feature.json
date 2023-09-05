@@ -1,9 +1,9 @@
 {
-  "id": "webpack",
+  "id": "webpack-cli",
   "version": "1.0.0",
-  "name": "webpack",
-  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/webpack",
-  "description": "Installs webpack and webpack-cli globally",
+  "name": "webpack CLI",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/webpack-cli",
+  "description": "Install webpack & webpack-cli globally",
   "options": {
     "webpackVersion": {
       "default": "latest",

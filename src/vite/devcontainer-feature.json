@@ -1,0 +1,18 @@
+{
+  "id": "vite",
+  "version": "1.0.0",
+  "name": "Vite",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/vite",
+  "description": "Installs Vite globally",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}

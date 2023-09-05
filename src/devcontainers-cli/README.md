@@ -1,6 +1,6 @@
 # Dev Container CLI Dev Container Feature
 
-📦 Installs the [`devcontainer` CLI] globally
+🐳 Installs the [`devcontainer` CLI] globally
 
 <p align=center>
   <img width=500 src="https://user-images.githubusercontent.com/61068799/265791861-afed8527-719c-441e-bb3e-73bca28f7665.png">
@@ -20,12 +20,19 @@
 
 &mdash; [devcontainers/cli | GitHub](https://github.com/devcontainers/cli)
 
+This Dev Container Feature installs Node.js and npm and runs
+`npm install -g @devcontainer/cli` to install the `devcontainer` CLI globally.
+Have fun dev-containering! 🚀
+
 ## Usage
+
+![Codespaces](https://img.shields.io/static/v1?style=for-the-badge&message=Codespaces&color=181717&logo=GitHub&logoColor=FFFFFF&label=)
+![Devcontainers](https://img.shields.io/static/v1?style=for-the-badge&message=Devcontainers&color=2496ED&logo=Docker&logoColor=FFFFFF&label=)
 
 ```jsonc
 // devcontainers.json
 "features": {
-  "ghcr.io/devcontainers-community/npm-features/devcontainers-cli": {}
+  "ghcr.io/devcontainers-community/features/devcontainers-cli": {}
 }
 ```
 
@@ -34,7 +41,7 @@
 ```jsonc
 // devcontainers.json
 "features": {
-  "ghcr.io/devcontainers-community/npm-features/devcontainers-cli": {
+  "ghcr.io/devcontainers-community/features/devcontainers-cli": {
     "version": "0.50.0"
   }
 }

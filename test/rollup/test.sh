@@ -1,3 +1,3 @@
 #!/bin/bash
 set -ex
-prettier --version
+rollup --version

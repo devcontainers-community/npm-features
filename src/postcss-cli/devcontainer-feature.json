@@ -1,0 +1,18 @@
+{
+  "id": "postcss-cli",
+  "version": "1.0.0",
+  "name": "PostCSS CLI",
+  "documentationURL": "http://github.com/devcontainers-community/npm-features/tree/main/src/postcss-cli",
+  "description": "Installs PostCSS globally",
+  "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": ["latest"],
+      "type": "string"
+    }
+  },
+  "dependsOn": {
+    "ghcr.io/devcontainers/features/node": {}
+  }
+}

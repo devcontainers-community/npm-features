@@ -1,3 +1,3 @@
 #!/bin/bash
 set -ex
-eslint --version
+jest --version

@@ -1,3 +1,5 @@
+[⬅️ Back to feature collection](https://github.com/devcontainers-community/features)
+
 # Community <img valign=middle height=30 src="https://favicone.com/npmjs.com?s=64">npm Dev Container Features
 
 📦 Top-rated globally installed npm packages for Dev Container Features
@@ -15,29 +17,28 @@
   </a>
 </p>
 
-<!-- prettier-ignore-start -->
-<!-- START_FEATURE_LIST -->
-
-- **[Prettier](http://github.com/devcontainers-community/npm-features/tree/main/src/prettier)** - Installs prettier and plugins globally
-- **[TypeScript](http://github.com/devcontainers-community/npm-features/tree/main/src/typescript)** - Installs TypeScript globally
-
-<!-- END_FEATURE_LIST -->
-<!-- prettier-ignore-end -->
-
-[↗️ See all features at containers.dev/features](https://containers.dev/features)
+<!-- prettier-ignore -->
+- **[Dev Containers CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/devcontainers-cli)** - 🐳 Installs the devcontainer CLI globally
+- **[ESLint](https://github.com/devcontainers-community/npm-features/tree/main/src/eslint)**
+- **[webpack CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/webpack-cli)**
+- **[PostCSS CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/postcss-cli)**
+- **[Jest](https://github.com/devcontainers-community/npm-features/tree/main/src/jest)**
+- **[Rollup](https://github.com/devcontainers-community/npm-features/tree/main/src/rollup)**
+- **[Vite](https://github.com/devcontainers-community/npm-features/tree/main/src/vite)**
+- **[Babel CLI](https://github.com/devcontainers-community/npm-features/tree/main/src/babel-cli)**
 
 ## Usage
 
 ```jsonc
 "features": {
-  "ghcr.io/devcontainers-community/npm-features/<feature-id>": {}
+  "ghcr.io/devcontainers-community/features/<feature-id>": {}
 }
 ```
 
-💡 Don't worry! You can also do this:
+💡 Want more customization? Don't worry! You can also do this:
 
 ```jsonc
-"updateContentCommand": "npm install -g @octocat/my-tiny-cli"
+"updateContentCommand": "npm install -g @octocat/my-cli"
 // ☝ You can "updateContentCommand" or "postCreateCommand"
 ```
 
@@ -54,8 +55,9 @@ devcontainer features test -f <feature-id>
 ```
 
 Someone with appropriate access must manually trigger the <kbd>Publish
-features</kbd> workflow to create a new release.
+features</kbd> workflow to trigger a new "release" to publish features to the
+main feature collection index at [devcontainers-community/features].
 
-In the future, the `ghcr.io/devcontainers-community/npm-features` collection
-index may be integrated into the main `ghcr.io/devcontainers-community/features`
-collection. At present, there is insufficient tooling to support this.
+<!-- prettier-ignore-start -->
+[devcontainers-community/features]: https://github.com/devcontainers-community/features
+<!-- prettier-ignore-end -->
