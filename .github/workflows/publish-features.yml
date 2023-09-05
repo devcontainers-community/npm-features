@@ -8,11 +8,23 @@ on:
   workflow_dispatch:
 concurrency: ${{ github.workflow }}
 jobs:
-  publish-features:
+  list-features:
+    outputs:
+      all-features: ${{ steps.list-features.outputs.all-features }}
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: list-features
+        uses: devcontainers-community/list-features@v2
+  publish-feature:
     permissions:
       contents: read
       packages: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.list-features.outputs.all-features) }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - run: npm install -g @devcontainers/cli
@@ -21,9 +33,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: devcontainer features publish -r ghcr.io -n ${{ github.repository }} src
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: devcontainers-community/publish-feature@v1
+        with:
+          path: src/${{ matrix.id }}
   update-readme:
     needs: publish-features
     permissions:
