@@ -7,7 +7,7 @@ if [[ -e src/$1 ]]; then
 fi
 
 mkdir src/$1
-cd src/$1
+pushd src/$1
 
 cat <<EOF | tee devcontainer-feature.json
 {
@@ -34,4 +34,15 @@ cat <<EOF | tee install.sh
 #!/bin/bash
 set -ex
 npm install -g $1@\$VERSION
+EOF
+
+popd
+
+mkdir test/$1
+pushd test/$1
+
+cat <<EOF | tee test.sh
+#!/bin/bash
+set -ex
+$1 --version
 EOF
