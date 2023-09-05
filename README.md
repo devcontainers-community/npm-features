@@ -2,15 +2,18 @@
 
 📦 Top-rated globally installed npm packages for Dev Container Features
 
-<!--<p align=center>
-  <img width=100 src="https://github.com/devcontainers-community/npm-features/assets/61068799/31da965d-d958-4d7b-bde5-85e7bbbc4f94">
-</p>-->
-
 🥇 Focuses on popular npm CLI tools \
 👨‍👩‍👧‍👦 Community-driven maintainership
 
-[![](https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A7%B0+Add+a+feature&color=CB3837&label=)](https://github.com/devcontainers-community/npm-features/issues/new) &nbsp;
-[![](https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A4%9D+Join+the+org&color=222222&label=)](https://github.com/orgs/devcontainers-community/discussions/new?category=general)
+<p>
+  <a href="https://github.com/devcontainers-community/npm-features/issues/new">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A7%B0+Add+a+feature&color=CB3837&label=">
+  </a>
+  &nbsp;
+  <a href="https://github.com/orgs/devcontainers-community/discussions/new?category=general">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=%F0%9F%A4%9D+Join+the+org&color=222222&label=">
+  </a>
+</p>
 
 <!-- prettier-ignore-start -->
 <!-- START_FEATURE_LIST -->
@@ -35,7 +38,7 @@
 
 ```jsonc
 "updateContentCommand": "npm install -g @octocat/my-tiny-cli"
-// ☝ You can postCreateComand instead if you like.
+// ☝ You can "updateContentCommand" or "postCreateCommand"
 ```
 
 ## Development
